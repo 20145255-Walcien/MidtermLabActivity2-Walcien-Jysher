@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form: Walcien, Jysher Denzel R.</title>
+    </head>
+<body>
+<div>
+    <a href="index.html">Home</a>
+    <a href="Exercise4b.html">Exercise4b</a>
+    <a href="Exercise5a.html">Exercise5a</a>
+    <a href="Exercise5b.html">Exercise5b</a>
+    <a href="Exercise5c.html">Exercise5c</a>
+    <a href="Exercise6a Simple Tables- Walcien, Jysher Denzel R..html">Exercise6a</a>
+    <a href="Exercise6B Complex Tables - Walcien, Jysher Denzel R.html">Exercise6B</a>
+    <a href="Exercise7a_Walcien, Jysher.html">Exercise7a</a>
+    <a href="exercise8.html">Exercise8</a>
+</div><br>
+    <img src="images/University_of_Baguio_textlogo.png" alt="University of Baguio" height="150px" width="450px">
+    <h1 style="text-align: center;">Student Profile</h1>
+    <hr style="height: 5px; color: gray; background-color: gray;">
+    <br>
+    <br>
+    <hr style="height: 2px; color: rgba(128, 128, 128, 0.445); background-color:rgba(128, 128, 128, 0.445);">
+    <table align="center" width="100%" cellpadding="10" cellspacing="10">
+            <form action="/action_page.php">
+                <tr>
+                    <td><label for="snumber" style="font-size: 20pt;">Student Number</label></td>
+                    <td><input type="text" id="snumber" name="snumber" minlength="5" maxlength="12" style="font-size: 20pt;" pattern="[0-9]{8}"></td>
+                </tr>
+                <tr>
+                    <td><label for="sname" style="font-size: 20pt;">Student Name</label></td>
+                    <td><input type="text" id="sname" name="sname" style="font-size: 20pt;" placeholder="Last Name">,
+                    <input type="text" id="sname" name="sname" style="font-size: 20pt;" placeholder="First Name">
+                    <input type="text" id="sname" name="sname" style="font-size: 20pt;"placeholder="Middle Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="course" style="font-size: 20pt;">Course/Program</label></td>
+                    <td colspan="3"><select id="course" name="course" style="width: 75%; font-size: 20pt; text-align-last: center;">
+                            <option>--Please Select Your Course--</option>
+                            <option value="(BSIT) - Bachelor of Science in Information Technology">--(BSIT) - Bachelor of Science in Information Technology--</option>
+                            <option value="(ACT) - Associate in Computer Technology">--(ACT) - Associate in Computer Technology--</option>
+                            <option value="(BSCS) - Bachelor of Science in Computer Science">--(BSCS) - Bachelor of Science in Computer Science--</option>
+                            <option value="(BSCpE) - Bachelor of Science in Computer Engineering">--(BSCpE) - Bachelor of Science in Computer Engineering--</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="mnumber" style="font-size: 20pt;">Mobile No.</label></td>
+                    <td><input type="tel" id="mnumber" name="mnumber" style="font-size: 20pt;" placeholder="ex. 09123456789"></td>
+                    <td><label for="email" style="font-size: 20pt;">Email Address</label></td>
+                    <td><input type="email" id="email" name="email" style="font-size: 20pt;" size="30" placeholder="ex. example@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="resaddress" style="font-size: 20pt;">Residential Address</label></td>
+                    <td><textarea name="resaddress" style="font-size: 15pt;" rows="3" cols="50"></textarea></td>
+                    <td><label for="permaddress" style="font-size: 20pt;">Permanent Address</label></td>
+                    <td><textarea name="permaddress" style="font-size: 15pt;" rows="3" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="permregion" style="font-size: 20pt;">(Permanent) Region</label></td>
+                    <td><select id="permregion" name="permregion" style="font-size: 20pt; text-align-last: center;">
+                            <option>--Please Select Your Region--</option>
+                            <option value="(NCR) - National Capital Region">(NCR) - National Capital Region</option>
+                            <option value="(CAR) - Cordillera Administrative Region">(CAR) - Cordillera Administrative Region</option>
+                            <option value="(Region I) - Ilocos Region">(Region I) - Ilocos Region</option>
+                            <option value="(Region II) - Cagayan Valley">(Region II) - Cagayan Valley</option>
+                            <option value="(Region III) - Central Luzon">(Region III) - Central Luzon</option>
+                            <option value="(Region IV-A) - Calabarzon">(Region IV-A) - Calabarzon</option>
+                            <option value="(Southwestern Tagalog Region) - Mimaropa">(Southwestern Tagalog Region) - Mimaropa</option>
+                            <option value="(Region V) - Bicol Region">(Region V) - Bicol Region"</option>
+                            <option value="(Region VI) - Western Visayas">(Region VI) - Western Visayas</option>
+                            <option value="(Region VII) - Central Visayas">(Region VII) - Central Visayas</option>
+                            <option value="(Region VIII) - Eastern Visayas">(Region VIII) - Eastern Visayas</option>
+                            <option value="(Region IX) - Zamboanga Peninsula">(Region IX) - Zamboanga Peninsula</option>
+                            <option value="(Region X) - Northern Mindanao">(Region X) - Northern Mindanao</option>
+                            <option value="(Region XI) - Davao Region">(Region XI) - Davao Region</option>
+                            <option value="(Region XII) - Soccsksargen">(Region XII) - Soccsksargen</option>
+                            <option value="(Region XIII) - Caraga">(Region XIII) - Caraga</option>
+                            <option value="(BARMM) - Bangsamoro">(BARMM) - Bangsamoro</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="permprovince" style="font-size: 20pt;">(Permanent) Province</label></td>
+                    <td><input list="permprovince" style="font-size: 20pt; text-align-last: center;" size="30" placeholder="--Please Select Your Province--">
+                        <datalist id="permprovince" style="font-size: 20pt;">
+                            <option value="Abra"></option>
+                            <option value="Apayao"></option>
+                            <option value="Benguet"></option>
+                            <option value="Ifugao"></option>
+                            <option value="Kalinga"></option>
+                            <option value="Mountain Province"></option>
+                            <option value="Ilocos Norte"></option>
+                            <option value="Ilocos Sur"></option>
+                            <option value="La Union"></option>
+                            <option value="Pangasinan"></option>
+                            <option value="Batanes"></option>
+                            <option value="Cagayan"></option>
+                            <option value="Isabela"></option>
+                            <option value="Nueva Vizcaya"></option>
+                            <option value="Quirino"></option>
+                            <option value="Aurora"></option>
+                            <option value="Bataan"></option>
+                            <option value="Bulacan"></option>
+                            <option value="Nueva Ecija"></option>
+                            <option value="Pampanga"></option>
+                            <option value="Tarlac"></option>
+                            <option value="Zambales"></option>
+                            <option value="Batangas"></option>
+                            <option value="Cavite"></option>
+                            <option value="Laguna"></option>
+                            <option value="Quezon"></option>
+                            <option value="Rizal"></option>
+                            <option value="Marinduque"></option>
+                            <option value="Occidental Mindoro"></option>
+                            <option value="Oriental Mindoro"></option>
+                            <option value="Palawan"></option>
+                            <option value="Romblon"></option>
+                            <option value="Albay"></option>
+                            <option value="Camarines Norte"></option>
+                            <option value="Camarines Sur"></option>
+                            <option value="Catanduanes"></option>
+                            <option value="Masbate"></option>
+                            <option value="Sorsogon"></option>
+                            <option value="Aklan"></option>
+                            <option value="Antique"></option>
+                            <option value="Capiz"></option>
+                            <option value="Guimaras"></option>
+                            <option value="Iloilo"></option>
+                            <option value="Negros Occidental"></option>
+                            <option value="Bohol"></option>
+                            <option value="Cebu"></option>
+                            <option value="Negros Oriental"></option>
+                            <option value="Siquijor"></option>
+                            <option value="Biliran"></option>
+                            <option value="Eastern Samar"></option>
+                            <option value="Leyte"></option>
+                            <option value="Northern Samar"></option>
+                            <option value="Samar"></option>
+                            <option value="Southern Leyte"></option>
+                            <option value="Zamboanga del Norte"></option>
+                            <option value="Zamboanga del Sur"></option>
+                            <option value="Zamboanga Sibugay"></option>
+                            <option value="Bukidnon"></option>
+                            <option value="Camiguin"></option>
+                            <option value="Lanao del Norte"></option>
+                            <option value="Misamis Occidental"></option>
+                            <option value="Misamis Oriental"></option>
+                            <option value="Davao de Oro"></option>
+                            <option value="Davao del Norte"></option>
+                            <option value="Davao del Sur"></option>
+                            <option value="Davao Occidental"></option>
+                            <option value="Davao Oriental"></option>
+                            <option value="Cotabato"></option>
+                            <option value="Sarangani"></option>
+                            <option value="South Cotabato"></option>
+                            <option value="Sultan Kudarat"></option>
+                            <option value="Agusan del Norte"></option>
+                            <option value="Agusan del Sur"></option>
+                            <option value="Dinagat Islands"></option>
+                            <option value="Surigao del Norte"></option>
+                            <option value="Surigao del Sur"></option>
+                            <option value="Basilan"></option>
+                            <option value="Lanao del Sur"></option>
+                            <option value="Maguindanao"></option>
+                            <option value="Sulu"></option>
+                            <option value="Tawi-Tawi"></option>
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="municipality" style="font-size: 20pt;">Municipality</label></td>
+                    <td><input type="text" id="municipality" name="municipality" size="30" style="font-size: 20pt; text-align-last: center;" placeholder="--Please Enter Your Municipality--">
+                </tr>
+                <tr>
+                    <td><label for="permtelno" style="font-size: 20pt;">Permanent Tel No.</label></td>
+                    <td><input type="tel" id="permtelno" name="permtelno" style="font-size: 20pt;"></td>
+                </tr>
+                <tr>
+                    <td><label for="datebirth" style="font-size: 20pt;">Date of Birth</label></td>
+                    <td><input type="text" id="datebirth" name="datebirth" style="font-size: 20pt; text-align-last: center;" maxlength="10" placeholder="Month">
+                        <input type="text" id="datebirth" name="datebirth" style="font-size: 20pt; text-align-last: center;" size="2" maxlength="2" placeholder="Day">,
+                        <input type="text" id="datebirth" name="datebirth" style="font-size: 20pt; text-align-last: center;" size="5" maxlength="4" placeholder="Year"></td>
+                    <td><label for="placebirth" style="font-size: 20pt;">Place of Birth</label></td>
+                    <td><input type="text" id="placebirth" name="placebirth" style="font-size: 20pt;" size="30"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender" style="font-size: 20pt;">Gender</label></td>
+                    <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male" style="font-size: 20pt;">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" style="font-size: 20pt;">Female</label>
+                        <input type="radio" id="Do not want to mention" name="gender" value="Do not want to mention">
+                        <label for="Do not want to mention" style="font-size: 20pt;">Do not want to mention</label></td>
+                    <td><label for="religion" style="font-size: 20pt;">Religion</label></td>
+                    <td><input type="text" id="religion" name="religion" style="font-size: 20pt; text-align-last: center;" size="30" placeholder="--Religion--"></td>
+                </tr>
+                <tr>
+                    <td><label for="nationality" style="font-size: 20pt;">Nationality</label></td>
+                    <td><input type="text" id="nationality" name="nationality" style="font-size: 20pt;"></td>
+                    <td><label for="civstatus" style="font-size: 20pt;">Civil Status</label></td>
+                    <td><select id="civstatus" name="civstatus" style="font-size: 20pt; text-align-last: center;">
+                        <option>--Civil Status--</option>
+                        <option value="Single" style="font-size: 20pt;">Single</option>
+                        <option value="In a relationship">In a relationship</option>
+                        <option value="Married">Married</option>
+                        <option value="Widow/Widower">Widow/Widower</option>
+                        <option value="It's complicated">It's complicated</option>
+                    </select></td>
+                </tr>
+            </form>
+    </table>
+    <hr style="height: 2px; color: rgba(128, 128, 128, 0.445); background-color:rgba(128, 128, 128, 0.445);">
+</body>
+</html>
